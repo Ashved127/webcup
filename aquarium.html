@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Latest compiled and minified CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <!-- Jquery for CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+     $("button").click(function(){
+        $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+      });
+  });
+</script>
  
 
 
@@ -306,7 +316,8 @@ Monitor health of animals and treat as needed per veterinarian’s instructions 
         <div class="panel-footer">
           <h3>Rs2000</h3>
           
-          <button class="btn btn-lg">Book Now</button>
+          <button class="btn btn-lg">
+            Book Now</button>
         </div>
       </div> 
     </div> 
@@ -335,7 +346,8 @@ Monitor health of animals and treat as needed per veterinarian’s instructions 
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default pull-right" type="submit">
+            <p id="p1">Send</p></button>
         </div>
       </div> 
     </div>
